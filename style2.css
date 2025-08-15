@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-weight:normal;
+    font-family: sans-serif;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: url('IMG_9190.PNG') center center / cover no-repeat;
+    filter: blur(1px);
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.2); /* Adjust darkness */
+}
+
+.tchau{
+    text-align: center;
+    font-family:'Dancing Script';
+}

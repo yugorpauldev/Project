@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-weight:normal;
+    font-family: sans-serif;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: url('bedroom.jpeg') center center / cover no-repeat;
+    filter: blur(4px);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+}
+.page{
+    padding: 20px ;
+    display: grid;
+    grid-template-areas:" . invite  . ";
+    grid-template-columns: 1fr 2fr 1fr ;
+    
+
+}
+
+.invite{
+    grid-area: invite;
+}
+
+
+.title{
+    display:flex;
+    justify-content: center;
+    font-size: 45px;
+    color: wheat;
+    font-family:'Dancing Script';
+    border-radius: 
+}
+
+.invite{
+    background-color: wheat;
+    padding: 35px;
+    color: #43281c;
+    border-radius: 20px;
+}
+
+.box-title{
+    text-align: center;
+    font-size: 18px;
+    border:1px solid #43281c;
+    border-radius: 5px;
+    background-color: #43281c;
+    color:wheat;
+
+}
+
+.item{
+    padding-bottom: 15px;
+}
+
+.aceitar{
+    width:100%;
+    border-radius: 20px;
+    background-color: beige;
+    color:#43281c;
+    font-size: 15px;
+}
